@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>HackedBrain.NuGet.Build</id>
+        <version>1.0.0</version>
+        <authors>Drew Marsh</authors>
+        <owners>Mimeo.com,Inc.</owners>
+        <projectUrl>http://github.com/HackedBrain/HackedBrain.NuGet.Build</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Adds support for building NuGet packages by providing a .targets file that is added to any project that references it.</description>
+        <summary>Support for building NuGet packages.</summary>
+        <tags>HackedBrain Build MSBuild Nuget Package</tags>
+        <developmentDependency>true</developmentDependency>
+        <dependencies>
+            <dependency id="NuGet.CommandLine" version="[2.8,3.0)" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="HackedBrain.NuGet.Build.targets" target="build" />
+    </files>
+</package>
